@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crypto Currency</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Index/style.css">
+    </head>
+    <body>
+        
+    <header>
+        
+    <div class="wrapper">
+        <h1>CRYPTO</h1>    
+    </div>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+    <div class="nav-links">
+       
+        <ul class="first">
+            <li><a href="./Home/homepage.html">Home</a></li>
+            <li><a href="./About us/about.html">About Us</a></li>
+            <li><a href="./News/HTML/news.html">News</a></li>
+            <li><a href="./Trending/trending.html">Trending</a></li>
+            <li><a href="./Contact/index.html">Contact us</a></li>
+            <li><a href="./Login/login.html">Login/Register</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    
+    </div>
+</header>
+
+<main>
+    <div>
+        <a href=" "><img src="./Index/images/cr_4x.png" name="slideshow" id="slideshow"  width="100%" height="500"></a>
+</div>
+<script>
+    let myImagesArray = ["./Index/images/crypto.png", "./Index/images/homeimage.jpg","./Index/images/cr_4x.png"];
+
+
+
+   
+    //make an automatic slide to display the images
+    let ImageNumber = 0;
+    let difference = myImagesArray.length -1;
+
+    let delay = 2000; //milliseconds    1sec=1000milliseconds
+
+
+    setInterval('ChangeImages(1)', delay);
+    //-1 to show the slide backwards
+    //1 to show the slide forwards
+ 
+    function ChangeImages(direction)
+    {//begin function
+        
+		ImageNumber = ImageNumber + direction;
+
+		if(ImageNumber > difference)
+		{//begin inner first if
+			ImageNumber = 0;
+		}//end inner first if
+
+		if(ImageNumber < 0)
+		{//begin inner second if
+			ImageNumber = difference;
+		}//end inner second if
+		//document.slideshow.src = myImagesArray[ImageNumber];
+		document.getElementById('slideshow').src = myImagesArray[ImageNumber];
+
+       
+
+    }//end function
+</script>
+    
+    <h1 class="heading"> <marquee>SECURELY BUY, SELL, STORE, SEND and TRACK</marquee></h1>
+       <h3 class="head">Buy crypto at true cost</h3>
+        
+        <h3 class="head">Buy and sell 250+ cryptocurrencies with 20+ fiat currencies <br>
+            using bank transfers or your credit/debit card. </h3>
+
+            <div class="row" align="center">
+                <div class="column" style="background-color:#aaa;"><h3>Certifications and Assessments</h3>
+                <p>Crypto.com is built on a solid foundation of security, privacy and compliance and is the first cryptocurrency company in the world to have ISO 22301:2019, ISO/IEC 27701:2019, ISO/IEC 27001:2013 and PCIDSS v3.2.1 Level 1 compliance, and independently assessed at Tier 4, the highest level for both NIST Cybersecurity and Privacy Frameworks, as well as Service Organization Control (SOC) 2 compliance.
+                     Crypto.com has also engaged globally recognised security consulting and auditing firms like Kudelski Security to stress test and audit our core Blockchain systems.</p></div>
+                <div class="column" style="background-color:#bbb;"><h3>Data Privacy</h3>
+                    <p>At Crypto.com we’re committed to Security. We are the first crypto company to achieve some of the industry's highest security standards. We’re constantly investing heavily in our people, technology, and processes to maintain the highest standards. 
+                       As an industry leader, we believe we have an obligation to share our best knowledge and good practices with our customers. 
+                         </p></div>
+                <div class="column" style="background-color:#ccc;"><h3>Deep liquidity</h3>
+                <p>Crypto is one of the most liquid regulated crypto spot exchanges in the world. Get low cost of execution leveraging a dynamic fee structure for high-volume trading.</p></div>
+              </div>
+</main>
+
+<footer>
+    <div class="social" align="center">
+        <ul class="media">
+            <li><img src="./Index/images/crypto.png" height="50px" width="80x"/></li>
+            <li><a href="https://www.facebook.com">
+                <img src="./Index/images/facebook.png" height="50px" width="50x"/></a></li>
+           
+            <li><a href="https://instagram.com">
+                <img src="./Index/images/instagram.png" height="50px" width="50px"/></a></li>
+                <li><a href="https://www.linkedin.com">
+                    <img src="./Index/images/linkedIn_PNG8.png" height="50px" width="50px"/></a></li>
+        </ul>
+    </div>
+    <br/>
+    <div class="copyright" align="center">
+        <p>Copyright &copy; 2022 All rights reserved to CRYPTO</p>
+    </div>
+</footer>      
+           
+    </body>
+</html>

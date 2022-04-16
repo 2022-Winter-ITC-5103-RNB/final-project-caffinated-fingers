@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="../Login/style2.css">
+</head>
+<body>
+    <main>
+    <header class="header-container">
+        
+        <div class="wrapper">
+            <h1>CRYPTO</h1>    
+        </div>
+    
+        <div>
+            <ul class="first">
+                <li><a href="../NFT/Nft.html">NFT</a></li>
+                <li><a href="../Home/homepage.html">Home</a></li>
+                <li><a href="../About us/about.html">About Us</a></li>
+                <li><a href="../News/HTML/news.html">News</a></li>
+                <li><a href="../Trending/trending.html">Trending</a></li>
+                <li><a href="../Contact/index.html">Contact us</a></li>
+                <li><a href="../Login/login.html">Login</a></li>
+                <li><a href="../Registration/registration.html">Register</a></li>
+                <li><a href="../FAQs/faqs.html">Support</a></li>
+            </ul>
+        </div>
+      </header>
+      
+<main>
+    <div class="login-form">
+        <h1>Login Form</h1>
+        <p class="errors" id="errors"></p>
+            <form class="form" name="login_form" onsubmit="handleSubmit(event)">
+            <p>User Name</p>
+            <input type="text" name="user"  placeable="User Name">
+            <p>Password</p>
+            <input type="password" name="password" minlength="4" maxlength="8" placeable="Password">
+            <div class="button-container">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="social" align="center">
+        <ul class="media">
+            <li><img src="../Login/images/crypto.png" height="50px" width="80x"/></li>
+            <li><a href="https://www.facebook.com">
+                <img src="../Login/images/facebook.png" height="50px" width="50x"/></a></li>
+           
+            <li><a href="https://instagram.com">
+                <img src="../Login/images/instagram.png" height="50px" width="50px"/></a></li>
+                <li><a href="https://www.linkedin.com">
+                    <img src="../Login/images/crypto.png" height="50px" width="50px"/></a></li>
+        </ul>
+    </div>
+    <br/>
+    <div class="copyright" align="center">
+        <p>Copyright &copy; 2022 All rights reserved to CRYPTO</p>
+    </div>
+  </footer>
+<script>
+function handleSubmit(event){
+   event.preventDefault()
+   let username=document.login_form.user.value;
+   let password=document.login_form.password.value;
+  if(username=="" && password ==""){
+      document.getElementById("errors").innerText="*Username and Password is required"
+  }
+ else if(username=="")
+ {
+    document.getElementById("errors").innerText="*Username is required"
+ }
+ else if(password=="")
+ {
+    document.getElementById("errors").innerText="*Password is required"
+ }
+ else{
+     
+ }
+}
+</script>
+</body>
+</html>

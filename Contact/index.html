@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Form</title>
+    <link rel="stylesheet" href="../Contact/style.css">
+    <script src="../Contact/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>CRYPTO</h1>    
+        </div>
+    
+        <div>
+            <ul class="first">
+                <li><a href="../NFT/Nft.html">NFT</a></li>
+                <li><a href="../Home/homepage.html">Home</a></li>
+                <li><a href="../About us/about.html">About Us</a></li>
+                <li><a href="../News/HTML/news.html">News</a></li>
+                <li><a href="../Trending/trending.html">Trending</a></li>
+                <li><a href="../Contact/index.html">Contact us</a></li>
+                <li><a href="../Login/login.html">Login</a></li>
+                <li><a href="../Registration/registration.html">Register</a></li>
+                <li><a href="../FAQs/faqs.html">Support</a></li>
+            </ul>
+    
+        </div>
+    </header>
+    
+<form name="contactForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
+    <h2>Contact Us</h2>
+    <div class="row">
+        <label>Full Name</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="row">
+        <label>Country</label>
+        <select name="country">
+            <option>Select</option>
+            <option>Canada</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+        </select> 
+        <div class="error" id="countryErr"></div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+<footer>
+    
+    <div class="social" align ="center">
+        <hr>
+        <ul class="media">
+            <li><img src="../News/Assests/NewsAssets/Social/crypto.png" height="50px" width="80x"/></li>
+            <li><a href="https://www.facebook.com">
+                <img src="../News/Assests/NewsAssets/Social/facebook.png" height="50px" width="50x"/></a></li>
+           
+            <li><a href="https://instagram.com">
+                <img src="../News/Assests/NewsAssets/Social/instagram.png" height="50px" width="50px"/></a></li>
+                <li><a href="https://www.linkedin.com">
+                    <img src="../News/Assests/NewsAssets/Social/linkedIn_PNG8.png" height="50px" width="50px"/></a></li>
+        </ul>
+    </div>
+        <p>Copyright &copy;2022 All rights reserved.</p>
+   
+</footer>
+</body>
+</html>

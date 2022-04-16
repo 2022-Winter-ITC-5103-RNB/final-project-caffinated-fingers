@@ -1,0 +1,118 @@
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    margin-left: 2%;
+}
+
+.wrapper h1 {
+    font-family: cursive;
+    color: rgb(28, 135, 228);
+    height: auto;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.first {
+    float: right;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.first li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 35px;
+}
+
+.first li a {
+    color: rgb(28, 135, 228);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.first li a:hover {
+    border-bottom: 2px solid rgb(28, 135, 228);
+}
+
+/*footer*/
+
+footer {
+    margin: 20px 0 0 0;
+    padding: 0px 0 0 0;
+    height: 120px;
+    width: 100%;
+    background: black;
+}
+
+
+/*
+.jpg{
+    float:left;
+}*/
+
+#container{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cryptos{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.cryptos p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.cryptos img{
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.media li:hover {
+    border-bottom: 0.4px white solid;
+    opacity: 0.5;
+}
+
+.media li {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-right: 19px;
+}
+
+.copyright p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(28, 135, 228);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
